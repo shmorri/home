@@ -71,7 +71,7 @@ An IAM system is not a big monolith--it's a lot of services working together. Wh
 
   1. **fido**:  This component provides the server side endpoints to enroll and validate devices that use FIDO. It provides both FIDO U2F (register, authenticate) and FIDO 2 (attestation, assertion) endpoints. This service must be internet facing.
 
-  1. **config-api**: The API to configure the auth-server and other components is consolidated in this component. This service should not be Internet-facing.
+  1. **config-api**: The API to configure the auth-server and other components is consolidated in this component. This service should not be Internet-facing. Read the [API documentation here](https://gluu.org/swagger-ui/?url=https://raw.githubusercontent.com/JanssenProject/jans-config-api/master/docs/jans-config-api-swagger.yaml).
 
   1. **scim**: [SCIM](http://www.simplecloud.info/) is JSON/REST API to manage user data. Use it to add, edit and update user information. This service should not be Internet facing.
 
